@@ -1,0 +1,22 @@
+h1 {
+    text-shadow: 2px 2px 5px #4CAF50;
+  }
+
+
+
+#movieNames td, #movieNames th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #movieNames tr:nth-child(even) {background-color: #eceaea;}
+
+  #movieNames td:hover {background-color: rgb(196, 195, 195);}
+
+  #movieNames th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }

@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bmdb-ng';
+  // create an array named movies and populate with some movies
+  movies = ["Return of the Living Dead", "The Princess Bride", "Monty Python and the Holy Grail", "The Evil Dead", "The Shining"];
 }
