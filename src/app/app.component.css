@@ -1,22 +1,32 @@
 h1 {
-    text-shadow: 2px 2px 5px #4CAF50;
-  }
+  text-shadow: 2px 2px 5px #fbfcfb;
+  background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQgIDQ0HCA0NDQ8NDQcNFREWFhURExMYHSggGBolGxUVITEhMSkrLjouFx8zODMsNygtLisBCgoKDg0NDw8PFSsZFRkrKysrKysrKzctKzctKysrKy0rLTctLS0rKy0rKy0rLS0tLSsrKysrKystLSs3Ky0tK//AABEIAHIBuAMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAJxABAQACAgICAQQDAQEAAAAAAAECEQMSBBMUYVEFFSFBMVKhkTL/xAAaAQEBAQEBAQEAAAAAAAAAAAABAAIDBAYF/8QAHREBAAMBAQEBAQEAAAAAAAAAAAEREhMCAxQxIf/aAAwDAQACEQMRAD8A+26jq26jq/Yt87ll1PTTqfVWcs9HpfU9C1SNKkVoaVtUUOHpWMEyYgooaORlqBIqQ5FTEW3EJkVIuYLxwZmW48osORr0OYM21llpUxaTA+otqPLPRzFp1PqLOWcil9S0LNJLZ2JqB7LabU2tULX2HZlaXY0NNuw7Mexdlkab9lXJzdzuaytt+47OfuO6ytunsNsO59xk6b7G2Pc+6o6afwNI7H2FKz6puJ7PZX+IuKbi12SsUxuJXFtYVxNiYYXFNxb3FNxatmfLC4puLe4lcTbE+XPcSuLe4lcWrZny57iG1xB0zlnIfU9HEqRoaaQ+os5Z6Gl9S0bVFo9Ho9A0nRyHpUgNKxmz6f8Ah4zTWfyzMukeWUi4fRWOLNmIKRcxXjg0mDM+nSPKOpzFrMT6sW6ZRIfVfU5BbWWfU+rWQdRZyyuKbG9jKwxImGViK1yiLGolzmGNRWtiLG4lzmGVTWlibG4YlFqdqsKtMSUoyyORNiRdj2Whosn2PsWhoFXY5kg1Rtp2OZMjFG2szPsy2exRtr2PsylVKKatps9s5TlFG1loSmCWi6rNWqZdC9bfRzFaWXN6g65iFs83l6PStDTs81J0cPQ0DRynpOjiJ9B1OVcrNtRESzkXI0xxFwGmso0vD+DmKscRMmIa4zapxjjjowxcpmnfz5tnji0mDSYLmLnPp1jyzmKpgvSpGZluPLHqXVtotK1lnoLsTVYpGSLGtRY3EsyysRlGtibGrYmGNxRcXRYXVq2J8ua4JuDq6l1OmZ8OS8afW7Oo6HbPNx3jT63ZcS6HQn5uP1jo7Ohes7HNydC6Oz1j1rY5uTqOrr9Zes7XNy9R1dXrHrWlhy6PTo9R+paWJc2j06PUPUNHEsNKka+s/WNHMsocaes/WrOZRFRXQ+osxBRUExORm2og4AYaeZoaa9B0d7eXLLQ016DorWWWhpr0HRWss5FSK6LxwEyY8lF40dVTFiXSIVIuYlji1xjEuvmDxxbYROEbYxy9enbz5ORchYrjFusQWhpUAs0nRaUehapnYmxrpNjVszDLSbi26jqbGXPcU3F0dSuDUemZ8ua4lp03BNwOmcOfRadHrL1nTOGGhY1uBdDayy0NNOg6mxlloaadR1VjLPQ006l1VqkaGl9Ro2qRoaXoaVqkaGlaGlYpOhpWhpWqToaVoaSpOhpWhpJOgrQSSFBIgegkn44+O9D1j1ufR14w8/44+O9D1n610XGHnfHL49el6x610XGHnfHqsfHrv6H0XSVHxhwTgVOF29D6Do1yhyTiVON09R1GzzY44NJivQ0zMtx5KQz0NMy0WxKLBplowBsgDQMhOhpQVhOi0oG1SdF1WFapGi6tArFM+hdGo0bWWPQettotLSyx9ZetvoaWhlz+sep0aGjpYc3rHqdGhpaGHN6x63T1HVaWHN6y9Tq6jqtLDl9Y9bq6jqdjDl9Zet1dB0W1hy+set1dB1W1hy+set1dYXWfS2sOb1l63V1n5g6z6Wxhy+sOrrPoHawLyFeRx3lZ5czw9HW3deUrzvOy5mWXMOrM+nqXyIm+VPy8jLmrHPmv5E/Zifb2r5uP5R+4Y/mPCyzqZWe0s9Je7f1PD/ZP7rh/t/yvBoHb0Okve/dcPz/w/wByx/LwTi7el0l7+P6hjf7aY+ZPy+fxydXDWo+0tR7l7ePkSrnM8zDPR+5rq6aepOWC80efhyfwi8x6nT0byxGXO873neXY62tOy+T9lfK+3l82dn+HPfIrnP2mGZ9va+V9l8t488hc5R3kaen8z7HzPt5VzTc6O8rT1/mfY+Y8b3H7x+iVp7Pyx8v7eP7x7x+iVp7Hy/s/lfbxvkH8hfolaex8r7Hyft4/vVOdfok6et8n7Hyft5U5jnKe8q3q/J+x8h5s5VTkPWTb0fkU/fXnzkP3RrpKt3++qnNXm3yZE3zD0VvV9tHu+3jZeb9s8vN+z0lah7t8iT+03zJHgZeZ9ssvL+2tjb6C+fGeX6h9vn8vL+2WXlnbPR9Bl+o38s7+oX8vn75X2i+Udsz9H0F/Ub+U/uN/L53LyvtN8r7Oh0fR/uN/I/cr+Xzfyk3yvtaHR9J+5X8h8zfK+zWh0fXZcjPLkeXl+o4/1tF823/Erw7bn3D08uVllyOD5GV/oezKjbM+nXlyI7MJuq/laC7kIUxqpirVHlC00xxtg6U2so0F3FWOGyqLDBvjlop/DHlyN01/G95jnI4uw9qtW9Kcv8MryuTLn/iM7zqfR07MuVHv04svIZZc7NjT1LyzJy8s048fJ1/f8N55Eyn+V/Rdl3VeWxzZ5au/6/yxz5/tykW7p5C5zPM932Xvn5FjT1O6bXm/K1/ap5kB07MuSxF5nN8mX+05ckqpW6/cc53n3kL3Clp6c51TmeXOZc8grT1JyrnM8i+Wzy8xqJO3ufJhXy/t4N8uovl/bVro96+Z9ovmfbw75SflfZsdHtXy/tN8p43yS+S1Y29e+V9ovk/by/kJvOYlbenfI+0XyPt51503natnT0MudF53n3mReZqxp6GXOzvO4bzIvMbZ07rzpvO4LzIvM1bOnoXnTfIefeZN5jY0775BvMvMFY0+twdGBB4XohtivEBNNMV4gKGlxUAagtcToDRJUAMJny1hkQUiWdRQEyjKssgEGeTLIABnlRxW7ADLfl/+Xm50Bej6RbWdt/NAYc0y381W7+QEly1rjaAoMLTkAWi2VoDITai0gQmopghFpWgFFsbIFDY2AQWytMNJNRaA1ATU0AhFTSDTKbU0AhFIAsv/2Q==);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+
+#movieNames td,
+#movieNames th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#movieNames tr:nth-child(even) {
+  background-color: #eceaea;
+}
+
+#movieNames td:hover {
+  background-color: rgb(196, 195, 195);
+}
+
+#movieNames th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #151616;
+  color: white;
+}
 
 
-
-#movieNames td, #movieNames th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-
-  #movieNames tr:nth-child(even) {background-color: #eceaea;}
-
-  #movieNames td:hover {background-color: rgb(196, 195, 195);}
-
-  #movieNames th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-  }
