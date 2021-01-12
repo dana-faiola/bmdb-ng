@@ -16,7 +16,7 @@ export class ActorCreateComponent implements OnInit {
   ngOnInit(): void {
   }
   save() {
-    // save the movie to the DB
+    // save the actor to the DB
     this.actorSvc.create(this.actor).subscribe(
       resp => {
         this.actor = resp as Actor;
