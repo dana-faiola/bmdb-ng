@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Credit } from '../model/credit.class';
 
-const URL = 'http://localhost:8080/movies';
+const URL = 'http://localhost:8080/credits';
 @Injectable({
   providedIn: 'root',
 })

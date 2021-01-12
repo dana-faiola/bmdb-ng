@@ -1,5 +1,9 @@
+<app-menu></app-menu>
 <section class="heading">
     <span class="page-title font-weight-bold font-italic">[{{title}}]</span>
+    <a routerLink='/credit-create'>
+        <img width='20' height='20' src='assets/add-icon.png' title='Add New'>
+    </a>
 </section>
 <table class="table table-sm table-striped">
     <thead>
@@ -8,13 +12,27 @@
             ID
         </th>
         <th>
-            Actor ID
+            Title
         </th>
         <th>
-            Movie ID
+            Year
         </th>
         <th>
-            Role
+            Rating
+        </th>
+        <th>
+            Director
+        </th>
+        <th>
+            Name
+        </th> <th>
+            Gender
+        </th>
+        <th>
+            Birth Date
+        </th>
+        <th>
+            Action
         </th>
     </tr>
     </thead>
@@ -25,8 +43,7 @@
             <td>{{credit.movie.year}}</td>
             <td>{{credit.movie.rating}}</td>
             <td>{{credit.movie.director}}</td>
-            <td>{{credit.actor.firstName}}</td>
-            <td>{{credit.actor.lastName}}</td>
+            <td>{{credit.actor.firstName + ", " + credit.actor.lastName}}</td>
             <td>{{credit.actor.gender}}</td>
             <td>{{credit.actor.birthDate}}</td>
             <td>Detail | Edit</td>

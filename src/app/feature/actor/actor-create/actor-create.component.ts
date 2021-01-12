@@ -1,31 +1,30 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Actor } from 'src/app/model/actor.class';
 import { ActorService } from 'src/app/service/actor.service';
 
 @Component({
   selector: 'app-actor-create',
   templateUrl: './actor-create.component.html',
-  styleUrls: ['./actor-create.component.css']
+  styleUrls: ['./actor-create.component.css'],
 })
 export class ActorCreateComponent implements OnInit {
-  title="Actor Create";
+  title = 'Actor Create';
   actor: Actor = new Actor();
-  submitBtnTitle ="Create";
-  constructor(private actorSvc: ActorService) { }
+  submitBtnTitle = 'Create';
+  constructor(private actorSvc: ActorService, private router: Router) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   save() {
     // save the actor to the DB
     this.actorSvc.create(this.actor).subscribe(
-      resp => {
+      (resp) => {
         this.actor = resp as Actor;
-        console.log('Actor created',this.actor );
+        console.log('Actor created', this.actor);
       },
-      err => {
+      (err) => {
         console.log(err);
       }
     );
   }
-
 }
