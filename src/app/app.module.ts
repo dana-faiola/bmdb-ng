@@ -16,6 +16,10 @@ import { MovieDetailComponent } from './feature/movie/movie-detail/movie-detail.
 import { MovieEditComponent } from './feature/movie/movie-edit/movie-edit.component';
 import { ActorDetailComponent } from './feature/actor/actor-detail/actor-detail.component';
 import { ActorEditComponent } from './feature/actor/actor-edit/actor-edit.component';
+import { UserListComponent } from './feature/user/user-list/user-list.component';
+import { UserEditComponent } from './feature/user/user-edit/user-edit.component';
+import { UserDetailComponent } from './feature/user/user-detail/user-detail.component';
+import { UserCreateComponent } from './feature/user/user-create/user-create.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { ActorEditComponent } from './feature/actor/actor-edit/actor-edit.compon
     MovieDetailComponent,
     MovieEditComponent,
     ActorDetailComponent,
-    ActorEditComponent
+    ActorEditComponent,
+    UserListComponent,
+    UserEditComponent,
+    UserDetailComponent,
+    UserCreateComponent
   ],
   imports: [
     BrowserModule,

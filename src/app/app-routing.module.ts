@@ -10,6 +10,10 @@ import { MovieCreateComponent } from './feature/movie/movie-create/movie-create.
 import { MovieDetailComponent } from './feature/movie/movie-detail/movie-detail.component';
 import { MovieEditComponent } from './feature/movie/movie-edit/movie-edit.component';
 import { MovieListComponent } from './feature/movie/movie-list/movie-list.component';
+import { UserCreateComponent } from './feature/user/user-create/user-create.component';
+import { UserDetailComponent } from './feature/user/user-detail/user-detail.component';
+import { UserEditComponent } from './feature/user/user-edit/user-edit.component';
+import { UserListComponent } from './feature/user/user-list/user-list.component';
 
 
 const routes: Routes = [
@@ -23,6 +27,10 @@ const routes: Routes = [
   {path: 'actor-detail/:id', component: ActorDetailComponent},
   {path: 'actor-edit/:id', component: ActorEditComponent},
   {path: 'credit-list', component: CreditListComponent},
+  {path: 'user-list', component: UserListComponent},
+  {path: 'user-create', component: UserCreateComponent},
+  {path: 'user-detail/:id', component: UserDetailComponent},
+  {path: 'user-edit/:id', component: UserEditComponent},
   {path: '*', component: NoComponentDefinedComponent}
 ];
 
