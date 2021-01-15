@@ -37,7 +37,7 @@ export class MovieDetailComponent implements OnInit {
     );
   }
   delete() {
-    // save the movie to the DB
+    // delete the movie
     this.movieSvc.delete(this.movie.id).subscribe(
       resp => {
         this.movie = resp as Movie;
