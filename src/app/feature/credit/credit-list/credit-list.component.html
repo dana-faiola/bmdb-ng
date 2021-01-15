@@ -46,7 +46,25 @@
             <td>{{credit.actor.firstName + ", " + credit.actor.lastName}}</td>
             <td>{{credit.actor.gender}}</td>
             <td>{{credit.actor.birthDate}}</td>
-            <td>Detail | Edit</td>
+            <td>
+                <a routerLink="/credit-detail/{{ credit.id }}">
+                  <img
+                    width="20"
+                    height="20"
+                    src="assets/details.png"
+                    title="Credit Details"
+                  />
+                </a>
+                |
+                <a routerLink="/credit-edit/{{ credit.id }}">
+                  <img
+                    width="20"
+                    height="20"
+                    src="assets/pencil-icon.png"
+                    title="Credit Edit"
+                  />
+                </a>
+              </td>
     </tr>
     </tbody>
 </table>
