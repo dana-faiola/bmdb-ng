@@ -20,6 +20,9 @@ import { UserListComponent } from './feature/user/user-list/user-list.component'
 import { UserEditComponent } from './feature/user/user-edit/user-edit.component';
 import { UserDetailComponent } from './feature/user/user-detail/user-detail.component';
 import { UserCreateComponent } from './feature/user/user-create/user-create.component';
+import { CreditCreateComponent } from './feature/credit/credit-create/credit-create.component';
+import { CreditDetailComponent } from './feature/credit/credit-detail/credit-detail.component';
+import { CreditEditComponent } from './feature/credit/credit-edit/credit-edit.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { UserCreateComponent } from './feature/user/user-create/user-create.comp
     UserListComponent,
     UserEditComponent,
     UserDetailComponent,
-    UserCreateComponent
+    UserCreateComponent,
+    CreditCreateComponent,
+    CreditDetailComponent,
+    CreditEditComponent
   ],
   imports: [
     BrowserModule,

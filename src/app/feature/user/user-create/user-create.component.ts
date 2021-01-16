@@ -28,6 +28,6 @@ export class UserCreateComponent implements OnInit {
       (err) => {
         console.log(err);
       }
-    );
+    )
   }
 }
