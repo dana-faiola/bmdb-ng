@@ -5,14 +5,14 @@ import { MovieService } from 'src/app/service/movie.service';
 
 @Component({
   selector: 'app-movie-create',
-  templateUrl: './movie-create.component.html',
+  templateUrl: '../movie-maint-shared/movie-maint.component.html',
   styleUrls: ['./movie-create.component.css'],
 })
 export class MovieCreateComponent implements OnInit {
   title = 'Movie Create';
   movie: Movie = new Movie();
   submitBtnTitle = 'Create';
-  
+
   constructor(private movieSvc: MovieService, private router: Router) {}
 
   ngOnInit(): void {}
@@ -23,7 +23,7 @@ export class MovieCreateComponent implements OnInit {
         this.movie = resp as Movie;
         console.log('Movie created', this.movie);
         // forward to the movie list component
-        this.router.navigateByUrl("/movie-list");
+        this.router.navigateByUrl('/movie-list');
       },
       (err) => {
         console.log(err);

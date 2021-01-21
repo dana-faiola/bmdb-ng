@@ -71,7 +71,7 @@ export class CreditEditComponent implements OnInit {
         this.credit = resp as Credit;
         console.log('Credit created', this.credit);
         // forward to the movie list component
-        this.router.navigateByUrl('/movie-list');
+        this.router.navigateByUrl('/credit-list');
       },
       (err) => {
         console.log(err);

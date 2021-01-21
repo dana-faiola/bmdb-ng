@@ -38,6 +38,7 @@ export class CreditCreateComponent implements OnInit {
         console.log(err);
       }
     );
+  
     this.movieSvc.getAll().subscribe(
       resp => {
         this.movies = resp as Movie[];
@@ -46,7 +47,7 @@ export class CreditCreateComponent implements OnInit {
         console.log(err);
       }
     );
-  }
+    }
 
   save() {
     // save the credit to the DB
@@ -55,7 +56,7 @@ export class CreditCreateComponent implements OnInit {
         this.credit = resp as Credit;
         console.log('Credit created', this.credit);
         // forward to the movie list component
-        this.router.navigateByUrl('/movie-list');
+        this.router.navigateByUrl('/credit-list');
       },
       err => {
         console.log(err);

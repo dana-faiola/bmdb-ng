@@ -11,7 +11,8 @@ import { MovieService } from 'src/app/service/movie.service';
 export class MovieDetailComponent implements OnInit {
   title = 'Movie Detail';
   movie: Movie = null;
-  movieId: number = 0;   
+  movieId: number = 0;
+
   constructor(
     private movieSvc: MovieService,
     private router: Router,
@@ -20,11 +21,10 @@ export class MovieDetailComponent implements OnInit {
 
   ngOnInit(): void {
     // get the id from the url
-    this.route.params.subscribe(
-    parms => {this.movieId = parms['id']
-    console.log("MovieID = " + this.movieId);
-    }
-    );
+    this.route.params.subscribe((parms) => {
+      this.movieId = parms['id'];
+      console.log('MovieID = ' + this.movieId);
+    });
     // get movie by id
     this.movieSvc.getById(this.movieId).subscribe(
       (resp) => {
@@ -39,15 +39,15 @@ export class MovieDetailComponent implements OnInit {
   delete() {
     // delete the movie
     this.movieSvc.delete(this.movie.id).subscribe(
-      resp => {
+      (resp) => {
         this.movie = resp as Movie;
         console.log('Movie deleted', this.movie);
         // forward to the movie list component
-        this.router.navigateByUrl("/movie-list");
+        this.router.navigateByUrl('/movie-list');
       },
       (err) => {
         console.log(err);
       }
     );
-}
+  }
 }

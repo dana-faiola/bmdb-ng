@@ -18,7 +18,7 @@
     <tr *ngFor="let movie of movies">
       <td>{{ movie.id }}</td>
       <td>{{ movie.title }}</td>
-      <td>{{movie.year}}</td>
+      <td>{{ movie.year }}</td>
       <td>
         <a routerLink="/movie-detail/{{ movie.id }}">
           <img
