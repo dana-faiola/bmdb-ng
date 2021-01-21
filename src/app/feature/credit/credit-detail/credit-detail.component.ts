@@ -6,30 +6,32 @@ import { CreditService } from 'src/app/service/credit.service';
 @Component({
   selector: 'app-credit-detail',
   templateUrl: './credit-detail.component.html',
-  styleUrls: ['./credit-detail.component.css']
+  styleUrls: ['./credit-detail.component.css'],
 })
 export class CreditDetailComponent implements OnInit {
-  title = "Credit Detail";
+  title = 'Credit Detail';
   credit: Credit = null;
   creditId: number = 0;
 
-  constructor(private creditSvc: CreditService,
-              private router: Router,
-              private route: ActivatedRoute) { }
+  constructor(
+    private creditSvc: CreditService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
     // get the id from the url
-    this.route.params.subscribe(
-      parms => {this.creditId = parms['id'];
-      console.log("creditID = " +  this.credit);
+    this.route.params.subscribe((parms) => {
+      this.creditId = parms['id'];
+      console.log('creditID = ' + this.credit);
     });
     // get credit by id
     this.creditSvc.getById(this.creditId).subscribe(
-      resp => {
+      (resp) => {
         this.credit = resp as Credit;
-        console.log("Credit", this.credit);
+        console.log('Credit', this.credit);
       },
-      err => {
+      (err) => {
         console.log(err);
       }
     );
@@ -38,15 +40,15 @@ export class CreditDetailComponent implements OnInit {
   delete() {
     // delete the credit from the DB
     this.creditSvc.delete(this.credit.id).subscribe(
-      resp => {
+      (resp) => {
         this.credit = resp as Credit;
         console.log('Credit deleted', this.credit);
-        // forward to the actor list component
-        this.router.navigateByUrl("/credit-list");
+        // forward to the credit list component
+        this.router.navigateByUrl('/credit-list');
       },
-      err => {
+      (err) => {
         console.log(err);
       }
     );
-    }
+  }
 }
