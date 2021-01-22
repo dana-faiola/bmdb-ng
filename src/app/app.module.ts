@@ -24,6 +24,7 @@ import { CreditCreateComponent } from './feature/credit/credit-create/credit-cre
 import { CreditDetailComponent } from './feature/credit/credit-detail/credit-detail.component';
 import { CreditEditComponent } from './feature/credit/credit-edit/credit-edit.component';
 import { UserLoginComponent } from './feature/user/user-login/user-login.component';
+import { ToggleDirective } from './model/toggle.directive';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { UserLoginComponent } from './feature/user/user-login/user-login.compone
     CreditCreateComponent,
     CreditDetailComponent,
     CreditEditComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    ToggleDirective
   ],
   imports: [
     BrowserModule,

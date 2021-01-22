@@ -10,7 +10,7 @@ export class SystemService {
 
   //not applicable for bmdb as there is no 'admin' property on user
   // isAdmin(): boolean {
-  // return (this.loggedInUser == null) ? false : this'loggedInUser.admin;
+  // return (this.loggedInUser == null) ? false : this.loggedInUser.admin;
   //}
 
   constructor(private router: Router) {}
