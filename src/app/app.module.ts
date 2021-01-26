@@ -25,6 +25,7 @@ import { CreditDetailComponent } from './feature/credit/credit-detail/credit-det
 import { CreditEditComponent } from './feature/credit/credit-edit/credit-edit.component';
 import { UserLoginComponent } from './feature/user/user-login/user-login.component';
 import { ToggleDirective } from './model/toggle.directive';
+import { SortPipe } from './pipe/sort.pipe';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ToggleDirective } from './model/toggle.directive';
     CreditDetailComponent,
     CreditEditComponent,
     UserLoginComponent,
-    ToggleDirective
+    ToggleDirective,
+    SortPipe
   ],
   imports: [
     BrowserModule,
