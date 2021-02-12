@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Actor } from 'src/app/model/actor.class';
 import { ActorService } from 'src/app/service/actor.service';
 import { SystemService } from 'src/app/service/system.service';
+import { Router } from '@angular/router';
+import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-actor-list',
@@ -32,7 +34,6 @@ export class ActorListComponent implements OnInit {
       }
     );
   }
-
   sortBy(column: string): void {
     console.log('actor list sortBy called');
     if (column == this.sortCriteria) {

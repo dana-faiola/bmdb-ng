@@ -16,7 +16,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let actor of actors">
+    <tr *ngFor="let actor of actors | sort: sortCriteria:sortOrder ">
       <td>{{ actor.id }}</td>
       <td>{{ actor.firstName + " " + actor.lastName }}</td>
       <td>{{ actor.birthDate }}</td>
