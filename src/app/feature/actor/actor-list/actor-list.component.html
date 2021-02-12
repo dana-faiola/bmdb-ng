@@ -9,9 +9,9 @@
   <thead>
     <tr>
       <th><button [ngClass]="colClasses" (click)="sortBy('id')">ID</button></th>
-      <th>Name</th>
-      <th>Birth Date</th>
-      <th>Gender</th>
+      <th><button [ngClass]="colClasses" (click)="sortBy('lastName')">Name</button></th>
+      <th><button [ngClass]="colClasses" (click)="sortBy('birthDate')">Birth Date</button></th>
+      <th><button [ngClass]="colClasses" (click)="sortBy('gender')">Gender</button></th>
       <th>Action</th>
     </tr>
   </thead>
