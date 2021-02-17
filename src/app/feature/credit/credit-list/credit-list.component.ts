@@ -11,6 +11,9 @@ import { Credit } from '../../../model/credit.class';
 export class CreditListComponent implements OnInit {
   title = 'Credit List';
   credits: Credit[] = [];
+  sortCriteria: string = 'id';
+  sortOrder: string = 'asc';
+  colClasses = 'btn btn-link font-weight-bold';
 
   constructor(private creditSvc: CreditService,private sysSvc: SystemService) {}
 
@@ -27,5 +30,12 @@ export class CreditListComponent implements OnInit {
         console.log(err);
       }
     );
+  }
+  sortBy(column: string): void {
+    console.log('movie list sortBy called');
+    if (column == this.sortCriteria) {
+      this.sortOrder = this.sortOrder == 'desc' ? 'asc' : 'desc';
+    }
+    this.sortCriteria = column;
   }
 }

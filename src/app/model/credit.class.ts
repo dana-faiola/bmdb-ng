@@ -6,6 +6,8 @@ export class Credit {
   actor: Actor;
   movie: Movie;
   role: string;
+  //derived field
+  movieTitle: string;
 
   constructor(
     id: number = 0,
