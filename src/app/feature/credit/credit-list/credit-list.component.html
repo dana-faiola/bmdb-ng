@@ -1,70 +1,57 @@
 <app-menu></app-menu>
 <section class="heading">
-    <span class="page-title font-weight-bold font-italic">[{{title}}]</span>
-    <a routerLink='/credit-create'>
-        <img width='20' height='20' src='assets/add-icon.png' title='Add New'>
-    </a>
+  <span class="page-title font-weight-bold font-italic">[{{ title }}]</span>
+  <a routerLink="/credit-create">
+    <img width="20" height="20" src="assets/add-icon.png" title="Add New" />
+  </a>
 </section>
 <table class="table table-sm table-striped">
-    <thead>
-        <tr>
-        <th>
-            ID
-        </th>
-        <th>
-            <button [ngClass]="colClasses" (click)="sortBy('movieTitle')">Title</button>
-        </th>
-        <th>
-            Year
-        </th>
-        <th>
-            Rating
-        </th>
-        <th>
-            Director
-        </th>
-        <th>
-            Name
-        </th> <th>
-            Gender
-        </th>
-        <th>
-            Birth Date
-        </th>
-        <th>
-            Action
-        </th>
+  <thead>
+    <tr>
+      <th><button [ngClass]="colClasses" (click)="sortBy('id')">ID</button></th>
+      <th>
+        <button [ngClass]="colClasses" (click)="sortBy('movieTitle')">
+          Title
+        </button>
+      </th>
+      <th>Year</th>
+      <th>Rating</th>
+      <th>Director</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Birth Date</th>
+      <th>Action</th>
     </tr>
-    </thead>
-    <tbody>
-        <tr  *ngFor='let credit of credits'>
-            <td>{{credit.id}}</td>
-            <td>{{credit.movie.title}}</td>
-            <td>{{credit.movie.year}}</td>
-            <td>{{credit.movie.rating}}</td>
-            <td>{{credit.movie.director}}</td>
-            <td>{{credit.actor.firstName + " " + credit.actor.lastName}}</td>
-            <td>{{credit.actor.gender}}</td>
-            <td>{{credit.actor.birthDate}}</td>
-            <td>
-                <a routerLink="/credit-detail/{{ credit.id }}">
-                  <img
-                    width="20"
-                    height="20"
-                    src="assets/details.png"
-                    title="Credit Details"
-                  />
-                </a>
-                |
-                <a routerLink="/credit-edit/{{ credit.id }}">
-                  <img
-                    width="20"
-                    height="20"
-                    src="assets/pencil-icon.png"
-                    title="Credit Edit"
-                  />
-                </a>
-              </td>
+  </thead>
+  <tbody>
+    <tr *ngFor="let credit of credits | sort: sortCriteria:sortOrder">
+      <td>{{ credit.id }}</td>
+      <td>{{ credit.movie.title }}</td>
+      <td>{{ credit.movie.year }}</td>
+      <td>{{ credit.movie.rating }}</td>
+      <td>{{ credit.movie.director }}</td>
+      <td>{{ credit.actor.firstName + " " + credit.actor.lastName }}</td>
+      <td>{{ credit.actor.gender }}</td>
+      <td>{{ credit.actor.birthDate }}</td>
+      <td>
+        <a routerLink="/credit-detail/{{ credit.id }}">
+          <img
+            width="20"
+            height="20"
+            src="assets/details.png"
+            title="Credit Details"
+          />
+        </a>
+        |
+        <a routerLink="/credit-edit/{{ credit.id }}">
+          <img
+            width="20"
+            height="20"
+            src="assets/pencil-icon.png"
+            title="Credit Edit"
+          />
+        </a>
+      </td>
     </tr>
-    </tbody>
+  </tbody>
 </table>
