@@ -24,6 +24,9 @@ export class CreditListComponent implements OnInit {
     this.creditSvc.getAll().subscribe(
       (resp) => {
         this.credits = resp as Credit[];
+        for (let c of this.credits) {
+          c.movieTitle = c.movie.title;
+        }
         console.log('Credits', this.credits);
       },
       (err) => {

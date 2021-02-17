@@ -12,7 +12,7 @@
             ID
         </th>
         <th>
-            Title
+            <button [ngClass]="colClasses" (click)="sortBy('movieTitle')">Title</button>
         </th>
         <th>
             Year
