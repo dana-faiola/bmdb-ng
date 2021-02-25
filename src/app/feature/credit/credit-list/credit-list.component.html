@@ -18,7 +18,9 @@
           Year
         </button>
       </th>
-      <th>Rating</th>
+      <th><button [ngClass]="colClasses" (click)="sortBy('movieRating')">
+        Rating
+      </button></th>
       <th>Director</th>
       <th>Name</th>
       <th>Gender</th>

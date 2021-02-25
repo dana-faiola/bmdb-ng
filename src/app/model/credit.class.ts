@@ -9,6 +9,7 @@ export class Credit {
   //derived field
   movieTitle: string;
   movieYear: number;
+  movieRating: string;
 
   constructor(
     id: number = 0,
