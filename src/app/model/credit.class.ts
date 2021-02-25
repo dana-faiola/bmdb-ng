@@ -8,6 +8,7 @@ export class Credit {
   role: string;
   //derived field
   movieTitle: string;
+  movieYear: number;
 
   constructor(
     id: number = 0,

@@ -13,7 +13,11 @@
           Title
         </button>
       </th>
-      <th>Year</th>
+      <th>
+        <button [ngClass]="colClasses" (click)="sortBy('movieYear')">
+          Year
+        </button>
+      </th>
       <th>Rating</th>
       <th>Director</th>
       <th>Name</th>
