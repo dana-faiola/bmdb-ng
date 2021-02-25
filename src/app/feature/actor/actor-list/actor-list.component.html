@@ -8,7 +8,6 @@
 <table class="table table-sm table-striped">
   <thead>
     <tr>
-      <th><button [ngClass]="colClasses" (click)="sortBy('id')">ID</button></th>
       <th><button [ngClass]="colClasses" (click)="sortBy('lastName')">Name</button></th>
       <th><button [ngClass]="colClasses" (click)="sortBy('birthDate')">Birth Date</button></th>
       <th><button [ngClass]="colClasses" (click)="sortBy('gender')">Gender</button></th>
@@ -17,7 +16,6 @@
   </thead>
   <tbody>
     <tr *ngFor="let actor of actors | sort: sortCriteria:sortOrder ">
-      <td>{{ actor.id }}</td>
       <td>{{ actor.firstName + " " + actor.lastName }}</td>
       <td>{{ actor.birthDate }}</td>
       <td>{{ actor.gender }}</td>

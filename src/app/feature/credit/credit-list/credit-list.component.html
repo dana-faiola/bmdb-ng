@@ -8,7 +8,6 @@
 <table class="table table-sm table-striped">
   <thead>
     <tr>
-      <th><button [ngClass]="colClasses" (click)="sortBy('id')">ID</button></th>
       <th>
         <button [ngClass]="colClasses" (click)="sortBy('movieTitle')">
           Title
@@ -25,7 +24,6 @@
   </thead>
   <tbody>
     <tr *ngFor="let credit of credits | sort: sortCriteria:sortOrder">
-      <td>{{ credit.id }}</td>
       <td>{{ credit.movie.title }}</td>
       <td>{{ credit.movie.year }}</td>
       <td>{{ credit.movie.rating }}</td>

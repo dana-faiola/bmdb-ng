@@ -8,7 +8,6 @@
 <table class="table table-sm table-striped">
   <thead>
     <tr>
-      <th>ID</th>
       <th>User Name</th>
       <th>Password</th>
       <th>Name</th>
@@ -20,7 +19,6 @@
   </thead>
   <tbody>
     <tr *ngFor="let user of users">
-      <td>{{ user.id }}</td>
       <td>{{ user.username }}</td>
       <td>{{ user.password }}</td>
       <td>{{ user.firstName + " " + user.lastName }}</td>
