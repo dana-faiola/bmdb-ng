@@ -21,6 +21,8 @@ export class ActorCreateComponent implements OnInit {
       (resp) => {
         this.actor = resp as Actor;
         console.log('Actor created', this.actor);
+        // forward to the actor list component
+        this.router.navigateByUrl('/actor-list');
       },
       (err) => {
         console.log(err);
