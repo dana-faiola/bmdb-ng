@@ -28,6 +28,7 @@ export class CreditListComponent implements OnInit {
           c.movieTitle = c.movie.title;
           c.movieYear = c.movie.year;
           c.movieRating = c.movie.rating;
+          c.movieDirector = c.movie.director;
         }
         console.log('Credits', this.credits);
       },
