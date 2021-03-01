@@ -11,6 +11,7 @@ export class Credit {
   movieYear: number;
   movieRating: string;
   movieDirector: string;
+  actorName: string;
 
   constructor(
     id: number = 0,

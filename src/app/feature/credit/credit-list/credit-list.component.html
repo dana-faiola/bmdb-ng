@@ -18,13 +18,21 @@
           Year
         </button>
       </th>
-      <th><button [ngClass]="colClasses" (click)="sortBy('movieRating')">
-        Rating
-      </button></th>
-      <th><button [ngClass]="colClasses" (click)="sortBy('movieDirector')">
-        Director
-      </button></th>
-      <th>Name</th>
+      <th>
+        <button [ngClass]="colClasses" (click)="sortBy('movieRating')">
+          Rating
+        </button>
+      </th>
+      <th>
+        <button [ngClass]="colClasses" (click)="sortBy('movieDirector')">
+          Director
+        </button>
+      </th>
+      <th>
+        <button [ngClass]="colClasses" (click)="sortBy('actorName')">
+          Name
+        </button>
+      </th>
       <th>Gender</th>
       <th>Birth Date</th>
       <th>Action</th>
