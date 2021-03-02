@@ -33,7 +33,11 @@
           Name
         </button>
       </th>
-      <th>Gender</th>
+      <th>
+         <button [ngClass]="colClasses" (click)="sortBy('actorGender')">
+        Gender
+      </button>>
+     </th>
       <th>Birth Date</th>
       <th>Action</th>
     </tr>
