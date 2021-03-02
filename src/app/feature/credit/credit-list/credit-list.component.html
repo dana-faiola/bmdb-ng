@@ -34,11 +34,13 @@
         </button>
       </th>
       <th>
-         <button [ngClass]="colClasses" (click)="sortBy('actorGender')">
+        <button [ngClass]="colClasses" (click)="sortBy('actorGender')">
         Gender
-      </button>>
+      </button>
      </th>
-      <th>Birth Date</th>
+      <th><button [ngClass]="colClasses" (click)="sortBy('actorBirthDate')">
+        Birth Date
+      </button></th>
       <th>Action</th>
     </tr>
   </thead>
