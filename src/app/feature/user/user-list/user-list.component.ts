@@ -15,15 +15,14 @@ export class UserListComponent implements OnInit {
   sortOrder: string = 'asc';
   colClasses = 'btn btn-link font-weight-bold';
 
-  constructor(private userSvc: UserService, private sysSvc: SystemService) {}
+  constructor(private userSvc: UserService, private sysSvc: SystemService) { }
 
   ngOnInit(): void {
-    console.log('loggedInUser?',this.sysSvc.loggedInUser);
+    console.log('loggedInUser?', this.sysSvc.loggedInUser);
     // populate list of users
     this.userSvc.getAll().subscribe(
       (resp) => {
         this.users = resp as User[];
-        console.log('Users', this.users);
       },
       (err) => {
         console.log(err);
@@ -31,7 +30,7 @@ export class UserListComponent implements OnInit {
     );
   }
   sortBy(column: string): void {
-    console.log('vendor list sortBy called');
+
     if (column == this.sortCriteria) {
       this.sortOrder = this.sortOrder == 'desc' ? 'asc' : 'desc';
     }
