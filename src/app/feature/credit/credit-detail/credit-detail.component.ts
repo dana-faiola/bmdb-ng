@@ -17,19 +17,17 @@ export class CreditDetailComponent implements OnInit {
     private creditSvc: CreditService,
     private router: Router,
     private route: ActivatedRoute
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     // get the id from the url
     this.route.params.subscribe((parms) => {
       this.creditId = parms['id'];
-      console.log('creditID = ' + this.credit);
     });
     // get credit by id
     this.creditSvc.getById(this.creditId).subscribe(
       (resp) => {
         this.credit = resp as Credit;
-        console.log('Credit', this.credit);
       },
       (err) => {
         console.log(err);
@@ -42,7 +40,6 @@ export class CreditDetailComponent implements OnInit {
     this.creditSvc.delete(this.credit.id).subscribe(
       (resp) => {
         this.credit = resp as Credit;
-        console.log('Credit deleted', this.credit);
         // forward to the credit list component
         this.router.navigateByUrl('/credit-list');
       },
