@@ -24,7 +24,7 @@ export class CreditCreateComponent implements OnInit {
     private actorSvc: ActorService,
     private movieSvc: MovieService,
     private router: Router
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     // due to foreign key constraints we'll need to get
@@ -34,11 +34,11 @@ export class CreditCreateComponent implements OnInit {
       resp => {
         this.actors = resp as Actor[];
       },
-      err=> {
+      err => {
         console.log(err);
       }
     );
-  
+
     this.movieSvc.getAll().subscribe(
       resp => {
         this.movies = resp as Movie[];
@@ -47,14 +47,13 @@ export class CreditCreateComponent implements OnInit {
         console.log(err);
       }
     );
-    }
+  }
 
   save() {
     // save the credit to the DB
     this.creditSvc.create(this.credit).subscribe(
       resp => {
         this.credit = resp as Credit;
-        console.log('Credit created', this.credit);
         // forward to the movie list component
         this.router.navigateByUrl('/credit-list');
       },
