@@ -17,19 +17,17 @@ export class ActorDetailComponent implements OnInit {
     private actorSvc: ActorService,
     private router: Router,
     private route: ActivatedRoute
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     // get the id from the url
     this.route.params.subscribe((parms) => {
       this.actorId = parms['id'];
-      console.log('ActorID = ' + this.actorId);
     });
     // get actor by id
     this.actorSvc.getById(this.actorId).subscribe(
       (resp) => {
         this.actor = resp as Actor;
-        console.log('Actors', this.actor);
       },
       (err) => {
         console.log(err);
@@ -41,7 +39,6 @@ export class ActorDetailComponent implements OnInit {
     this.actorSvc.delete(this.actor.id).subscribe(
       (resp) => {
         this.actor = resp as Actor;
-        console.log('Actor deleted', this.actor);
         // forward to the actor list component
         this.router.navigateByUrl('/actor-list');
       },
